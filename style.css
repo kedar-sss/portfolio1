@@ -1,0 +1,272 @@
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f6f9;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* GLOBAL CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+/* HERO */
+.hero {
+  background-color: #0a0a0a;
+  color: white;
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  color: #00bfa6;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #ccc;
+}
+
+.hero .btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #00bfa6;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #019e8a;
+  transform: scale(1.05);
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #00bfa6;
+  margin-bottom: 25px;
+}
+
+/* HEADINGS */
+h2 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* SECTION CARD */
+.section-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 50px 30px;
+  margin: 40px auto;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+.section-card:hover {
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+/* ABOUT */
+.about p {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about .btn {
+  margin-top: 25px;
+  display: inline-block;
+  background-color: #00bfa6;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.about .btn:hover {
+  background-color: #019e8a;
+  transform: translateY(-2px);
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+  margin-top: 20px;
+}
+
+.skill-box {
+  background: #eafaf7;
+  padding: 14px 20px;
+  text-align: center;
+  border-radius: 14px;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  color: #00695c;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.skill-box:hover {
+  background-color: #00bfa6;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 191, 166, 0.3);
+}
+
+/* PROJECTS */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 4px solid #00bfa6;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #00bfa6;
+}
+
+.project-card p {
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.project-link {
+  color: #00bfa6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* CONTACT */
+.contact-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.contact-item {
+  background-color: #f0f4f8;
+  padding: 20px;
+  width: 200px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  text-decoration: none;
+  color: #00bfa6;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+  background-color: #00bfa6;
+  color: white;
+}
+
+.contact-item img {
+  width: 24px;
+  height: 24px;
+  transition: 0.3s ease;
+}
+
+.contact-item:hover img {
+  filter: brightness(100) invert(1);
+}
+
+.insta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  background-color: #e1306c;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.insta-btn .icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.insta-btn:hover {
+  background-color: #c12a5c;
+  
+  
+}
+
+.contact-item.whatsapp:hover {
+  background-color: #25d366;
+  color: white;
+}
+
+.contact-item.whatsapp:hover i {
+  color: white;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 14px;
+}
